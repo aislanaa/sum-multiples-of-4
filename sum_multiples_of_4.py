@@ -49,3 +49,12 @@ def get_even_multiples(a, b):
     if a < 1:
         a = 1
     return [n for n in range(a, b + 1) if n % 4 == 0]
+
+def print_summary(a, b):
+    """Выводит краткую сводку по промежутку."""
+    total = sum_multiples_of_4(a, b)
+    count = count_multiples_of_4(a, b)
+    numbers = get_even_multiples(a, b)
+    print(f"Числа, кратные 4: {numbers}")
+    print(f"Количество: {count}")
+    print(f"Сумма: {total}")
