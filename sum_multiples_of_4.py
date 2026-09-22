@@ -41,3 +41,11 @@ count = count_multiples_of_4(a, b)
 
 print(f"\nЧисел, кратных 4: {count}")
 print(f"Их сумма: {result}")
+
+def get_even_multiples(a, b):
+    """Возвращает список чисел, кратных 4, из [a, b]."""
+    if a > b:
+        a, b = b, a
+    if a < 1:
+        a = 1
+    return [n for n in range(a, b + 1) if n % 4 == 0]
