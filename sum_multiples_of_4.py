@@ -58,3 +58,6 @@ def print_summary(a, b):
     print(f"Числа, кратные 4: {numbers}")
     print(f"Количество: {count}")
     print(f"Сумма: {total}")
+
+def message_from_repob():
+    print("Изменение от RepoB")
